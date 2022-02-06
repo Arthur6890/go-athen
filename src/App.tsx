@@ -5,7 +5,6 @@ import About from "./screens/about";
 function App() {
   return (
     <>
-      <h1>beleza mane</h1>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
