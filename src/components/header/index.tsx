@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { AtenaLogo } from "../../assets/svg/index";
 import styles from "./styles.module.scss";
 
@@ -14,8 +15,12 @@ function Header() {
       <div className={styles.content}>
         <AtenaLogo />
         <div className={styles.sections}>
-          <a href="">Home</a>
-          <a href="">Quem somos</a>
+          <Link to="/" replace>
+            Home
+          </Link>
+          <Link to="about" replace>
+            Quem Somos
+          </Link>
           <a href="">Esportes</a>
           <a href="">Siga-nos</a>
           <a href="" id={styles.giant}>
