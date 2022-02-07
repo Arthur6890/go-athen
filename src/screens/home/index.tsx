@@ -13,6 +13,10 @@ function Home() {
         funcionando. Experimente clica-lo
       </h3>
       <h4 className={styles.title}>
+        Vc pode ver q tem duas # acima do menu de navegação. Estou em duvida em
+        qual das cores colocar. Me da sua opiniao dps de qual achar melhor? `
+      </h4>
+      <h4 className={styles.title}>
         (a imagem no topo será trocada quando você me enviar a q eu te pedi
         ontem. Por enquanto pus essa como exemplo)
       </h4>

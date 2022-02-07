@@ -8,8 +8,11 @@ function Header() {
     <div className={styles.main}>
       <div className={styles.image}>
         <div className={styles.blurBackground}>
-          <h1 className={styles.left}>#somos</h1>
-          <h1 className={styles.right}>atena</h1>
+          <h1>#SomosAtena</h1>
+          <div className={styles.teste}>
+            <h1 className={styles.left}>#Somos</h1>
+            <h1 className={styles.right}>Atena</h1>
+          </div>
         </div>
       </div>
       <div className={styles.content}>

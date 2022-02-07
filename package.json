@@ -1,8 +1,8 @@
 {
   "name": "go-athen",
+  "homepage": "https://arthur6890.github.io/go-athen/",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://arthur6890.github.io/go-athen/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
@@ -23,7 +23,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
