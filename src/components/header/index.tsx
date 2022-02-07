@@ -27,7 +27,7 @@ function Header() {
           <a href="https://www.instagram.com/aaaicex/">Esportes</a>
           <a href="https://www.instagram.com/aaaicex/">Siga-nos</a>
           <a href="https://www.instagram.com/aaaicex/" id={styles.giant}>
-            Seja um gigante!sss
+            Seja um gigante!
           </a>
         </div>
       </div>
