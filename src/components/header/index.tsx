@@ -21,9 +21,9 @@ function Header() {
           <Link to="about" replace>
             Quem Somos
           </Link>
-          <a href="">Esportes</a>
-          <a href="">Siga-nos</a>
-          <a href="" id={styles.giant}>
+          <a href="https://www.instagram.com/aaaicex/">Esportes</a>
+          <a href="https://www.instagram.com/aaaicex/">Siga-nos</a>
+          <a href="https://www.instagram.com/aaaicex/" id={styles.giant}>
             Se torne um gigante!
           </a>
         </div>
