@@ -4,6 +4,11 @@ import Header from "../../components/header";
 import styles from "./styles.module.scss";
 
 function About() {
+  const subscribe = () => {
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLSdLHowQOZFoNzgxAib62kSQozGBP4Y6hbqiwJZJ-XwkznNxSQ/viewform"
+    );
+  };
   return (
     <>
       <div className={styles.home}>
@@ -12,12 +17,15 @@ function About() {
           Aqui vai ser a pagina com a nossa historia.
         </h1>
         <h3 className={styles.title}>
-          Para voltar basta clicar no botao <strong>"Home"</strong> que também
-          ja está funcionando. Experimente clica-lo!
+          Para navegar entre as telas basta escolher um dos botões citados na{" "}
+          <strong>"Home"</strong>. Experimente clicar em algum!
         </h3>
         <h4 className={styles.title}>
-          (a imagem no topo será trocada quando você me enviar a q eu te pedi
-          ontem. Por enquanto pus essa como exemplo)
+          O fundo atás das "#" será uma imagem que eu pedi pra nossa querida
+          vice-presidente Flavinha e a área da "#" fará um efeito de vidro fosco
+          sobre a imagem, por enquanto pus uma cor sólida como exemplo. As
+          imagens que vao ficar alternando a gnt ve se vc faz algumas artes, ou
+          se poe foto dos times, por enquanto pus essas como exemplo também.
         </h4>
       </div>
       <div className={styles.mainDiv}>
@@ -60,6 +68,10 @@ function About() {
           habitant morbi tristique. Nulla facilisi cras fermentum odio eu
           feugiat.
         </h4>
+
+        <button className={styles.buttonCustom} onClick={subscribe}>
+          <span>Quero fazer parte!</span>
+        </button>
       </div>
     </>
   );

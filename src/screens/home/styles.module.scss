@@ -1,11 +1,15 @@
 .home {
   background-color: black;
   color: rgb(255, 255, 255);
-  height: 200vh;
+  min-height: 100vh;
 }
 
 .title {
   margin: 10px 0 0 20px;
   padding-top: 20px;
   font-weight: 100;
+
+  &.last {
+    padding-bottom: 50px;
+  }
 }

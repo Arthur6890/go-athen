@@ -17,6 +17,11 @@
   justify-content: center;
   align-items: center;
   background-color: black;
+  min-height: 100vh;
+
+  @media screen and (max-width: 769px) {
+    padding: 0 35px;
+  }
 
   svg {
     width: 80px;
@@ -34,11 +39,19 @@
   span {
     color: #9e0000;
     font-size: 35px;
+
+    @media screen and (max-width: 769px) {
+      font-size: 25px;
+    }
   }
 
   h1 {
     color: white;
     font-size: 57px;
+
+    @media screen and (max-width: 769px) {
+      font-size: 35px;
+    }
   }
 
   h4 {
@@ -47,5 +60,40 @@
     color: white;
     max-width: 800px;
     text-align: justify;
+
+    @media screen and (max-width: 769px) {
+      font-size: 15px;
+    }
+  }
+
+  .buttonCustom {
+    width: 30%;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 500px;
+    background-color: #9e0000;
+    border: none;
+    transition: all 0.3s;
+
+    span {
+      font-family: "Roboto Condensed", sans-serif;
+      font-weight: 600;
+      color: white;
+      font-size: 25px;
+
+      @media screen and (max-width: 769px) {
+        font-size: 15px;
+      }
+    }
+
+    &:hover {
+      background-color: #520101;
+      transform: scale(1.1);
+    }
+
+    @media screen and (max-width: 769px) {
+      width: 50%;
+      margin: 30px 0;
+    }
   }
 }

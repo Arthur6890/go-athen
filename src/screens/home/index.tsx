@@ -10,18 +10,22 @@ function Home() {
       <Slider />
       <h1 className={styles.title}>Aqui vai ser a pagina incial.</h1>
       <h3 className={styles.title}>
-        Por enquanto apenas os link de
-        <strong>"Quem somos", "Siga-nos" e "Seja um gigante"</strong> estão
-        funcionando. Experimente clica-los!
+        Todos os links do menu (
+        <strong>
+          "Home", "Quem somos", "Esportes", "Siga-nos" e "Seja um gigante"
+        </strong>
+        ) estão funcionando. Experimente clica-los!
       </h3>
       <h4 className={styles.title}>
         Vc pode ver q tem duas # acima do menu de navegação. Estou em duvida em
         qual das cores colocar. Me da sua opiniao dps de qual achar melhor?
       </h4>
-      <h4 className={styles.title}>
-        (a imagem no topo será trocada quando você me enviar a q eu te pedi
-        ontem, e as imagens que vao ficar alternando a gnt ve se vc faz algumas
-        artes, ou se poe foto dos times. Por enquanto pus essas como exemplo)
+      <h4 className={`${styles.title} ${styles.last}`}>
+        O fundo atás das "#" será uma imagem que eu pedi pra nossa querida
+        vice-presidente Flavinha e a área da "#" fará um efeito de vidro fosco
+        sobre a imagem, por enquanto pus uma cor sólida como exemplo. As imagens
+        que vao ficar alternando a gnt ve se vc faz algumas artes, ou se poe
+        foto dos times, por enquanto pus essas como exemplo também.
       </h4>
     </div>
   );

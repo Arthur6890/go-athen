@@ -23,6 +23,11 @@
       transition: all 0.4s ease;
       cursor: pointer;
 
+      @media screen and (max-width: 769px) {
+        width: 25px;
+        height: 25px;
+      }
+
       &:hover {
         fill: #ffffff;
       }
@@ -45,6 +50,10 @@
       text-transform: capitalize;
       margin: 5px 0 0 0;
       font-size: 22px;
+
+      @media screen and (max-width: 769px) {
+        font-size: 17px;
+      }
     }
 
     div {
@@ -60,6 +69,11 @@
         margin: 0 0 5px 15px;
         transition: all 0.4s ease;
         cursor: pointer;
+
+        @media screen and (max-width: 769px) {
+          width: 25px;
+          height: 25px;
+        }
 
         &:hover {
           fill: #9e0000;

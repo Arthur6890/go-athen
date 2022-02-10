@@ -20,21 +20,39 @@ function SportList({
     <div className={styles.main}>
       <div className={styles.title}>
         <h2>{title}</h2>
-        <a href={instagramSport}>
+
+        {instagramSport !== "#" && (
+          <a href={instagramSport}>
+            <BsInstagram />
+          </a>
+        )}
+        {/* <a href={instagramSport}>
           <BsInstagram />
-        </a>
+        </a> */}
       </div>
 
       <div className={styles.infos}>
         <h4>{subtitle}</h4>
         <div>
-          <a href={instagramCaptain} target="_blank" rel="noreferrer">
+          {instagramCaptain !== "#" && (
+            <a href={instagramCaptain} target="_blank" rel="noreferrer">
+              <BsInstagram />
+            </a>
+          )}
+
+          {whatsappCaptain !== "#" && (
+            <a href={whatsappCaptain} target="_blank" rel="noreferrer">
+              <BsWhatsapp />
+            </a>
+          )}
+
+          {/* <a href={instagramCaptain} target="_blank" rel="noreferrer">
             <BsInstagram />
           </a>
 
           <a href={whatsappCaptain} target="_blank" rel="noreferrer">
             <BsWhatsapp />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
