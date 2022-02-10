@@ -3,11 +3,11 @@ import styles from "./styles.module.scss";
 import { BsInstagram, BsWhatsapp } from "react-icons/bs";
 
 type props = {
-  instagramSport?: string;
+  instagramSport: string;
   title: string;
   subtitle: string;
-  instagramCaptain?: string;
-  whatsappCaptain?: string;
+  instagramCaptain: string;
+  whatsappCaptain: string;
 };
 function SportList({
   instagramSport,
@@ -28,11 +28,11 @@ function SportList({
       <div className={styles.infos}>
         <h4>{subtitle}</h4>
         <div>
-          <a href={instagramCaptain} target="_blank">
+          <a href={instagramCaptain} target="_blank" rel="noreferrer">
             <BsInstagram />
           </a>
 
-          <a href={whatsappCaptain} target="_blank">
+          <a href={whatsappCaptain} target="_blank" rel="noreferrer">
             <BsWhatsapp />
           </a>
         </div>

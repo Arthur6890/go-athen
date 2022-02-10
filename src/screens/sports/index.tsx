@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { sports } from "./sports";
 import Header from "../../components/header";
 import SportList from "../../components/sportList";
 import styles from "./styles.module.scss";
@@ -8,16 +8,21 @@ function Sports() {
   return (
     <div className={styles.main}>
       <Header />
-      <Container className={styles.content} fluid>
-        <Row className={styles.row}>
-          <Col>
-            <SportList title="Futebol" subtitle="Arthur Ramos" />
-          </Col>
-          <Col>
-            <SportList title="Futebol" subtitle="Arthur Ramos" />
-          </Col>
-        </Row>
-      </Container>
+      <div className={styles.content}>
+        {sports.map((item) => {
+          return (
+            <div>
+              <SportList
+                title={item.title}
+                subtitle={item.subtitle}
+                instagramCaptain={item.instagramCaptain}
+                instagramSport={item.instagramSport}
+                whatsappCaptain={item.whatsappCaptain}
+              />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

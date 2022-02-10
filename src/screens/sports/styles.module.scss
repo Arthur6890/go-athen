@@ -1,8 +1,19 @@
 .main {
   background-color: black;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.row {
-  margin: 18px 35px 0 35px;
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  div {
+    flex: 1 1 700px;
+    margin: 10px 40px;
+
+    @media screen and (min-width: 1025px) and (max-width: 1440px) {
+      flex: 1 1 610px;
+    }
+  }
 }
