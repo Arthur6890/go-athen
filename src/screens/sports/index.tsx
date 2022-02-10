@@ -8,6 +8,10 @@ function Sports() {
   return (
     <div className={styles.main}>
       <Header />
+      <div className={styles.title}>
+        <h1>Tem interesse em nossas modalidades?</h1>
+        <h2>Contacte um capitão agora!</h2>
+      </div>
       <div className={styles.content}>
         {sports.map((item) => {
           return (

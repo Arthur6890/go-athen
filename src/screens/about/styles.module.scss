@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Agrandir-Wide-Bold";
+  src: url(../../fonts/Agrandir-GrandHeavy.otf);
+}
+@font-face {
+  font-family: "Agrandir-Wide-Bold-italic";
+  src: url(../../fonts/Agrandir-WideBlackItalic.otf);
+}
+@font-face {
+  font-family: "Agrandir-tight";
+  src: url(../../fonts/Agrandir-Tight.otf);
+}
 .home {
   background-color: black;
   color: rgb(255, 255, 255);
@@ -30,32 +42,28 @@
     color: #9e0000;
   }
 
-  span,
-  h1 {
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: 600;
+  span {
+    font-family: Agrandir-Wide-Bold-italic, sans-serif;
+    color: #9e0000;
+    font-size: 25px;
+
+    @media screen and (max-width: 769px) {
+      font-size: 15px;
+    }
   }
 
-  span {
-    color: #9e0000;
-    font-size: 35px;
+  h1 {
+    font-family: Agrandir-Wide-Bold, sans-serif;
+    color: white;
+    font-size: 47px;
 
     @media screen and (max-width: 769px) {
       font-size: 25px;
     }
   }
 
-  h1 {
-    color: white;
-    font-size: 57px;
-
-    @media screen and (max-width: 769px) {
-      font-size: 35px;
-    }
-  }
-
   h4 {
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: Agrandir-tight, sans-serif;
     font-weight: 400;
     color: white;
     max-width: 800px;

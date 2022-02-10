@@ -7,13 +7,13 @@ function Header() {
   return (
     <div className={styles.main}>
       <div className={styles.image}>
-        <div className={styles.blurBackground}>
+        {/* <div className={styles.blurBackground}>
           <h1>#SomosAtena</h1>
           <div className={styles.teste}>
             <h1 className={styles.left}>#Somos</h1>
             <h1 className={styles.right}>Atena</h1>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className={styles.content}>
         <AtenaLogo />
