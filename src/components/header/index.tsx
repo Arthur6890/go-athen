@@ -21,10 +21,10 @@ function Header() {
           <Link to="/" replace>
             Home
           </Link>
-          <Link to="about" replace>
+          <Link to="/about" replace>
             Quem Somos
           </Link>
-          <a href="">Esportes</a>
+          <Link to="/sports">Esportes</Link>
           <a
             href="https://www.instagram.com/aaaicex/"
             target="_blank"

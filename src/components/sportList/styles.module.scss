@@ -1,0 +1,66 @@
+.main {
+  border-bottom: 1px dashed #9e0000;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      color: #9e0000;
+      font-family: "Roboto Condensed", sans-serif;
+      font-weight: bolder;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    svg {
+      fill: #9e0000;
+      width: 30px;
+      height: 30px;
+      margin-left: 15px;
+      transition: all 0.4s ease;
+      cursor: pointer;
+
+      &:hover {
+        fill: #ffffff;
+      }
+    }
+  }
+
+  .infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0 4px 0;
+
+    h4 {
+      color: #ffffff;
+      font-family: "Roboto Condensed", sans-serif;
+      font-weight: bolder;
+      align-self: flex-start;
+      text-transform: capitalize;
+      margin: 5px 0 0 0;
+      font-size: 22px;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+
+      svg {
+        fill: #ffffff;
+        width: 30px;
+        height: 30px;
+        margin: 0 0 5px 15px;
+        transition: all 0.4s ease;
+        cursor: pointer;
+
+        &:hover {
+          fill: #9e0000;
+        }
+      }
+    }
+  }
+}

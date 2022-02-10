@@ -1,11 +1,51 @@
 .home {
   background-color: black;
   color: rgb(255, 255, 255);
-  height: 100vh;
+  // height: 100vh;
 }
 
 .title {
   margin: 10px 0 0 20px;
   padding-top: 20px;
   font-weight: 100;
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+
+  svg {
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+    color: #9e0000;
+  }
+
+  span,
+  h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 600;
+  }
+
+  span {
+    color: #9e0000;
+    font-size: 35px;
+  }
+
+  h1 {
+    color: white;
+    font-size: 57px;
+  }
+
+  h4 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    color: white;
+    max-width: 800px;
+    text-align: justify;
+  }
 }

@@ -1,9 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
-// import { Link } from "react-router-dom";
 import Header from "../../components/header";
 import Slider from "../../components/carrousel";
-import { SliderData } from "../../components/carrousel/itens";
 
 function Home() {
   return (
@@ -12,7 +10,7 @@ function Home() {
       <Slider />
       <h1 className={styles.title}>Aqui vai ser a pagina incial.</h1>
       <h3 className={styles.title}>
-        Por enquanto apenas os link de{" "}
+        Por enquanto apenas os link de
         <strong>"Quem somos", "Siga-nos" e "Seja um gigante"</strong> estão
         funcionando. Experimente clica-los!
       </h3>
