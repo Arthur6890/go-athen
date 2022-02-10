@@ -26,9 +26,6 @@ function SportList({
             <BsInstagram />
           </a>
         )}
-        {/* <a href={instagramSport}>
-          <BsInstagram />
-        </a> */}
       </div>
 
       <div className={styles.infos}>
@@ -45,14 +42,6 @@ function SportList({
               <BsWhatsapp />
             </a>
           )}
-
-          {/* <a href={instagramCaptain} target="_blank" rel="noreferrer">
-            <BsInstagram />
-          </a>
-
-          <a href={whatsappCaptain} target="_blank" rel="noreferrer">
-            <BsWhatsapp />
-          </a> */}
         </div>
       </div>
     </div>

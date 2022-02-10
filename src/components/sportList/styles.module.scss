@@ -13,6 +13,10 @@
       font-weight: bolder;
       text-transform: uppercase;
       margin: 0;
+
+      @media screen and (max-width: 767px) {
+        white-space: nowrap;
+      }
     }
 
     svg {

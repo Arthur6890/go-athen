@@ -16,16 +16,9 @@ function Home() {
         </strong>
         ) estão funcionando. Experimente clica-los!
       </h3>
-      <h4 className={styles.title}>
-        Vc pode ver q tem duas # acima do menu de navegação. Estou em duvida em
-        qual das cores colocar. Me da sua opiniao dps de qual achar melhor?
-      </h4>
       <h4 className={`${styles.title} ${styles.last}`}>
-        O fundo atás das "#" será uma imagem que eu pedi pra nossa querida
-        vice-presidente Flavinha e a área da "#" fará um efeito de vidro fosco
-        sobre a imagem, por enquanto pus uma cor sólida como exemplo. As imagens
-        que vao ficar alternando a gnt ve se vc faz algumas artes, ou se poe
-        foto dos times, por enquanto pus essas como exemplo também.
+        As imagens que vao ficar alternando a gnt ve se vc faz algumas artes, ou
+        se poe foto dos times, por enquanto pus essas como exemplo também.
       </h4>
     </div>
   );

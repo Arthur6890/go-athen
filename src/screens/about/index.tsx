@@ -11,23 +11,8 @@ function About() {
   };
   return (
     <>
-      <div className={styles.home}>
-        <Header />
-        <h1 className={styles.title}>
-          Aqui vai ser a pagina com a nossa historia.
-        </h1>
-        <h3 className={styles.title}>
-          Para navegar entre as telas basta escolher um dos botões citados na{" "}
-          <strong>"Home"</strong>. Experimente clicar em algum!
-        </h3>
-        <h4 className={styles.title}>
-          O fundo atás das "#" será uma imagem que eu pedi pra nossa querida
-          vice-presidente Flavinha e a área da "#" fará um efeito de vidro fosco
-          sobre a imagem, por enquanto pus uma cor sólida como exemplo. As
-          imagens que vao ficar alternando a gnt ve se vc faz algumas artes, ou
-          se poe foto dos times, por enquanto pus essas como exemplo também.
-        </h4>
-      </div>
+      <Header />
+
       <div className={styles.mainDiv}>
         <GoMegaphone></GoMegaphone>
         <span>Olá!</span>

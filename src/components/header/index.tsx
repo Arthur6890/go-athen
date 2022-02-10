@@ -1,19 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { AtenaLogo } from "../../assets/svg/index";
+import banner from "../../assets/images/banner2.png";
 import styles from "./styles.module.scss";
 
 function Header() {
   return (
     <div className={styles.main}>
       <div className={styles.image}>
-        {/* <div className={styles.blurBackground}>
-          <h1>#SomosAtena</h1>
-          <div className={styles.teste}>
-            <h1 className={styles.left}>#Somos</h1>
-            <h1 className={styles.right}>Atena</h1>
-          </div>
-        </div> */}
+        <img src={banner} alt="" />
+        <div className={styles.blurBackground}>
+          <h1>#VemPraAtena</h1>
+        </div>
       </div>
       <div className={styles.content}>
         <AtenaLogo />
