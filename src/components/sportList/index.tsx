@@ -22,7 +22,7 @@ function SportList({
         <h2>{title}</h2>
 
         {instagramSport !== "#" && (
-          <a href={instagramSport}>
+          <a href={instagramSport} target="_blank" rel="noreferrer">
             <BsInstagram />
           </a>
         )}
