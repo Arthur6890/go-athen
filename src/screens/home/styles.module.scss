@@ -1,15 +1,12 @@
-.home {
-  background-color: black;
-  color: rgb(255, 255, 255);
-  min-height: 100vh;
+.image {
+  width: 100%;
+}
+
+.aboutUs {
+  padding: 0 15%;
 }
 
 .title {
-  margin: 10px 0 0 20px;
-  padding-top: 20px;
-  font-weight: 100;
-
-  &.last {
-    padding-bottom: 50px;
-  }
+  background-color: aqua;
+  color: #333333;
 }

@@ -32,10 +32,6 @@
     -webkit-backdrop-filter: blur(15px);
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 
-    // .teste {
-    //   display: flex;
-    // }
-
     h1 {
       margin: 0;
       font-family: "Yellowtail", cursive;
@@ -45,18 +41,6 @@
       background-clip: text;
       color: transparent;
       font-weight: 600;
-
-      // &.left {
-      //   color: #9e0000;
-      //   background-image: none;
-      //   background-clip: none;
-      // }
-
-      // &.right {
-      //   color: black;
-      //   background-image: none;
-      //   background-clip: none;
-      // }
 
       @media screen and (max-width: 767px) {
         font-size: 20px;
@@ -76,8 +60,16 @@
     align-items: center;
     width: 100%;
     align-self: flex-end;
-    background-color: #f1090d;
+    background-color: #000000;
     height: 60px;
+
+    &.hidenContent {
+      padding: 75px 0;
+
+      @media screen and (max-width: 769px) {
+        padding: 35px 0;
+      }
+    }
 
     svg {
       margin: 25px 0 0 33px;
@@ -101,6 +93,24 @@
       justify-content: space-evenly;
       align-items: center;
 
+      &.hidenSections {
+        justify-content: space-between;
+      }
+
+      img {
+        margin: 0 0 0 45px;
+        width: 100px;
+        fill: #ffffff;
+        z-index: 10;
+
+        @media screen and (max-width: 769px) {
+          display: none;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+          margin: 45px 0 0 33px;
+        }
+      }
       a {
         text-decoration: none;
         color: #ffffff;
@@ -110,18 +120,27 @@
         text-transform: uppercase;
         width: 14%;
         padding: 11px 15px 19px 5px;
-        box-shadow: inset 0 0 0 0 #9e0000;
         transition: ease-out 0.3s;
 
         &:hover {
-          box-shadow: inset 200px 0 0 0 #9e0000;
+          color: #9e0000;
+        }
+
+        &.hidenOptions {
+          box-shadow: inset 0 0 0 0 #9e0000;
+
+          &:hover {
+            box-shadow: inset 200px 0 0 0 #9e0000;
+          }
         }
 
         &#giant {
           width: 16%;
 
-          &:hover {
-            box-shadow: inset 225px 0 0 0 #9e0000;
+          &.hidenGiant {
+            &:hover {
+              box-shadow: inset 225px 0 0 0 #9e0000;
+            }
           }
 
           @media screen and (max-width: 425px) {
@@ -138,8 +157,12 @@
         }
 
         @media screen and (max-width: 425px) {
-          font-size: 12px;
+          font-size: 9px;
         }
+      }
+
+      @media screen and (max-width: 425px) {
+        justify-content: center;
       }
     }
   }
